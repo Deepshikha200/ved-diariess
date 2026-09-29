@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-jost), sans-serif;
+  --font-jost: var(--font-jost), sans-serif;
+
+  --color-brand: #102B24;
+  --color-brand-light: #1A3E34;
+  --color-brand-dark: #0A1B17;
+  --color-brand-surface: #14352D;
+  --color-brand-border: #234E42;
+  
+  --color-gold: #C5A880;
+  --color-gold-light: #E0CDB2;
+  --color-gold-dark: #A38350;
+
+  --color-sand: #F5F2EB;
+  --color-sand-light: #FAF8F5;
+  --color-sand-card: #FFFFFF;
+  --color-sand-muted: #EBE6DC;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand: #102B24;
+  --brand-light: #1A3E34;
+  --brand-dark: #0A1B17;
+  --gold: #C5A880;
+  --sand: #FAF8F5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-jost), system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), system-ui, -apple-system, sans-serif;
+  background-color: #FAF8F5;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #102B24;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A3E34;
+}
+
+/* Smooth image zoom utility */
+.editorial-hover-zoom {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-hover-zoom:hover {
+  transform: scale(1.04);
+}
+
+/* Luxury line clamp & text effects */
+.editorial-tracking {
+  letter-spacing: 0.2em;
+}
+
+/* Subtle cinematic grain/glow */
+.cinematic-glow {
+  box-shadow: 0 20px 50px -15px rgba(16, 43, 36, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 10px 30px -5px rgba(197, 168, 128, 0.3);
+}
+
+/* Keyframes for subtle pulsing or fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

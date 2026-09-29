@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
+    "dev:clean": "rmdir /s /q .next && next dev --port 3001",
     "build": "next build",
+    "build:clean": "rmdir /s /q .next && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "lucide-react": "^1.48.0",
     "next": "16.3.6",
     "postcss": "^8.5.28",
     "react": "19.2.8",
