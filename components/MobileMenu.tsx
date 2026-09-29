@@ -38,25 +38,22 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
 
   return (
     <div
-      className={`fixed inset-0 z-50 transition-all duration-500 lg:hidden ${
-        isOpen
-          ? "opacity-100 pointer-events-auto"
-          : "opacity-0 pointer-events-none"
-      }`}
+      className={`fixed inset-0 z-50 transition-all duration-500 lg:hidden ${isOpen
+        ? "opacity-100 pointer-events-auto"
+        : "opacity-0 pointer-events-none"
+        }`}
     >
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className={`absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity duration-500 ${
-          isOpen ? "opacity-100" : "opacity-0"
-        }`}
+        className={`absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity duration-500 ${isOpen ? "opacity-100" : "opacity-0"
+          }`}
       />
 
       {/* Drawer */}
       <div
-        className={`absolute top-0 right-0 w-full max-w-sm h-full bg-[#102B24] text-[#FAF8F5] shadow-2xl flex flex-col justify-between p-6 sm:p-8 transition-transform duration-500 ease-out border-l border-[#C5A880]/20 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`absolute top-0 right-0 w-full max-w-sm h-full bg-[#102B24] text-[#FAF8F5] shadow-2xl flex flex-col justify-between p-6 sm:p-8 transition-transform duration-500 ease-out border-l border-[#C5A880]/20 ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         {/* Drawer Header */}
         <div>
@@ -129,13 +126,13 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
             <div className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-[#C5A880]" />
               <a href="tel:+919876543210" className="hover:text-white">
-                +91 98765 43210
+                +91 9877260236
               </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-[#C5A880]" />
               <a href="mailto:info@veddiaries.com" className="hover:text-white">
-                contact@veddiaries.com
+                lkumar7810@gmail.com
               </a>
             </div>
           </div>

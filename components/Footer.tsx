@@ -70,11 +70,11 @@ export default function Footer() {
                 </span>
                 <span className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-[#C5A880]" />
-                  contact@veddiaries.com
+                  lkumar7810@gmail.com
                 </span>
                 <span className="flex items-center gap-2">
                   <Phone className="w-3.5 h-3.5 text-[#C5A880]" />
-                  +91 98765 43210
+                  +91 98772 60236
                 </span>
               </div>
             </div>

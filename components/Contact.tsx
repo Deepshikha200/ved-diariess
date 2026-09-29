@@ -103,7 +103,7 @@ export default function Contact() {
                       href="tel:+919876543210"
                       className="text-xs sm:text-sm text-neutral-600 hover:text-[#102B24] font-light mt-0.5 block"
                     >
-                      +91 98765 43210
+                      +91 9877260236
                     </a>
                   </div>
                 </div>
@@ -117,10 +117,10 @@ export default function Contact() {
                       Direct Email
                     </h4>
                     <a
-                      href="mailto:contact@veddiaries.com"
+                      href="mailto:lkumar7810@gmail.com"
                       className="text-xs sm:text-sm text-neutral-600 hover:text-[#102B24] font-light mt-0.5 block"
                     >
-                      contact@veddiaries.com
+                      lkumar7810@gmail.com
                     </a>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ export default function Contact() {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 9877260236"
                         className="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:border-[#102B24] focus:ring-1 focus:ring-[#102B24] text-sm outline-none transition-all bg-[#FAF8F5]/50"
                       />
                     </div>
