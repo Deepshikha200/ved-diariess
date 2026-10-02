@@ -8,17 +8,17 @@ const heroSlides = [
   {
     image: "/images/bannerimg.jpeg",
     tagline: "Grand Celebrations",
-    location: "Jaipur, Rajasthan",
+    location: "Chandigarh, India",
   },
   {
     image: "/images/contact_img.jpg",
     tagline: "Timeless Emotion",
-    location: "Udaipur, Rajasthan",
+    location: "Chandigarh, India",
   },
   {
     image: "/images/DSC09536.jpg",
     tagline: "Regal Heritage",
-    location: "Jodhpur, Rajasthan",
+    location: "Chandigarh, India",
   },
 ];
 

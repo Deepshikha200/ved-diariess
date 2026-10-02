@@ -37,8 +37,8 @@ export default function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
           isScrolled
-            ? "bg-[#FAF8F5]/90 backdrop-blur-md py-3.5 shadow-sm border-b border-[#102B24]/10"
-            : "bg-gradient-to-b from-black/60 via-black/30 to-transparent py-5 lg:py-6"
+            ? "bg-[#102B24] backdrop-blur-md py-2 shadow-sm border-b border-[#102B24]/10 "
+            : "bg-gradient-to-b  to-transparent py-5 lg:py-6"
         }`}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -47,9 +47,9 @@ export default function Header() {
             className="flex items-center gap-3 group focus:outline-none"
             aria-label="Ved Diaries - Return to top"
           >
-            <div className="relative w-9 h-9 sm:w-17 sm:h-17  overflow-hidden border border-[#C5A880]/40 p-0.5 bg-[#102B24] transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-14 h-14 sm:w-24 sm:h-24  overflow-hidden  p-0.5  transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/images/logo.png"  
+                src="/mainLogo.png"
                 alt="Ved Diaries Logo"
                 fill
                 className="object-cover"
@@ -58,16 +58,12 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span
-                className={`text-lg sm:text-xl font-semibold tracking-[0.25em] uppercase transition-colors duration-300 ${
-                  isScrolled ? "text-[#102B24]" : "text-white"
-                }`}
+                className={`text-lg sm:text-xl font-semibold tracking-[0.25em] uppercase transition-colors duration-300 text-white`}
               >
                 Ved Diaries
               </span>
               <span
-                className={`text-[9px] sm:text-[10px] tracking-[0.35em] uppercase font-light -mt-1 transition-colors duration-300 ${
-                  isScrolled ? "text-[#102B24]/70" : "text-[#E0CDB2]"
-                }`}
+                className={`text-[9px] sm:text-[10px] tracking-[0.35em] uppercase font-light -mt-1 transition-colors duration-300 text-[#E0CDB2]`}
               >
                 Cinematography & Stills
               </span>
@@ -82,7 +78,7 @@ export default function Header() {
                 href={link.href}
                 className={`text-sm font-medium tracking-[0.15em] uppercase transition-all duration-300 relative py-1 hover:text-[#C5A880] ${
                   isScrolled
-                    ? "text-[#102B24]/85 hover:text-[#102B24]"
+                    ? "text-white/85 hover:text-white"
                     : "text-white/90 hover:text-white"
                 } after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#C5A880] after:transition-all after:duration-300 hover:after:w-full`}
               >

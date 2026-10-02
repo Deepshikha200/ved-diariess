@@ -6,12 +6,7 @@ import { Sparkles, Compass, Heart, Film } from "lucide-react";
 
 export default function BrandIntro() {
   const hallmarks = [
-    {
-      icon: Compass,
-      number: "15+",
-      label: "Royal Destinations",
-      description: "From Rajasthan havelis to cliffside retreats",
-    },
+   
     {
       icon: Heart,
       number: "250+",
@@ -26,7 +21,7 @@ export default function BrandIntro() {
     },
     {
       icon: Sparkles,
-      number: "8+",
+      number: "5+",
       label: "Years of Mastery",
       description: "Dedicated to the art of luxury Indian weddings",
     },
@@ -44,7 +39,7 @@ export default function BrandIntro() {
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Brand Crest Accent */}
         <div className="flex flex-col items-center text-center">
-          <div className="w-12 h-12 relative mb-6 opacity-80">
+          <div className="w-30 h-30 relative mb-6 ">
             <Image
               src="/images/logo.png"
               alt="Ved Diaries Crest"
@@ -83,7 +78,7 @@ export default function BrandIntro() {
         </div>
 
         {/* Hallmarks Grid */}
-        <div className="mt-20 sm:mt-24 pt-12 border-t border-[#102B24]/10 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+        <div className="mt-20 sm:mt-24 pt-12 border-t border-[#102B24]/10 grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 text-center">
           {hallmarks.map((item) => {
             const Icon = item.icon;
             return (
