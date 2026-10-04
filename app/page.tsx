@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import BrandIntro from "@/components/BrandIntro";
 import Services from "@/components/Services";
-import FeaturedStories from "@/components/FeaturedStories";
+// import FeaturedStories from "@/components/FeaturedStories";
 import Films from "@/components/Films";
 import Gallery from "@/components/Gallery";
 import About from "@/components/About";
@@ -28,8 +28,9 @@ export default function Home() {
         {/* 3. Bespoke Offerings & Services */}
         <Services />
 
+
         {/* 4. Editorial Featured Stories */}
-        <FeaturedStories />
+        {/* <FeaturedStories /> */}
 
         {/* 5. Stories in Motion - YouTube Films */}
         <Films />

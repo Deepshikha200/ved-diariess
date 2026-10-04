@@ -13,7 +13,7 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-[#102B24]/15 bg-[#102B24]">
               <Image
-                src="/images/_ATP8950.jpg"
+                src="/images/IMG_4609.JPG.jpeg"
                 alt="Ved Diaries - Fine Art Wedding Moments"
                 fill
                 className="object-cover"

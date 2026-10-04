@@ -28,7 +28,7 @@ export const servicesData: ServiceItem[] = [
   },
 
   {
-    id: "pre-wedding",
+    id: "pre-weddings",
     number: "02",
     title: "Pre-Wedding Stories",
     tagline: "Stories, scenic destinations, and unforced chemistry.",

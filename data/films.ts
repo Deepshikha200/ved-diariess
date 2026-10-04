@@ -1,58 +1,40 @@
-export interface WeddingFilm {
-  id: string;
+export interface YouTubeVideo {
+  id: string; // YouTube Video ID (e.g. "TBigCgH1GNI")
   title: string;
-  couple: string;
-  youtubeId: string;
-  category: "Wedding Film" | "Cinematic Teaser" | "Pre-Wedding Film" | "Documentary";
-  duration: string;
-  location: string;
-  year: string;
-  description: string;
-  isFeatured?: boolean;
+  category?: string;
+  duration?: string;
+  location?: string;
 }
 
-export const weddingFilms: WeddingFilm[] = [
+// Simple array of YouTube videos as requested - easily add or remove videos here
+export const videos: YouTubeVideo[] = [
   {
-    id: "film-1",
+    id: "TBigCgH1GNI",
     title: "An Eternal Vow in the City of Lakes",
-    couple: "Aman & Simran",
-    youtubeId: "TBigCgH1GNI&t", // Replaceable with client's YouTube video ID
     category: "Wedding Film",
     duration: "4:18",
     location: "Udaipur, Rajasthan",
-    year: "2025",
-    description:
-      "A cinematic masterpiece capturing regal rituals, heartfelt vows, and tearful farewells by the royal shores of Pichola.",
-    isFeatured: true,
   },
   {
-    id: "film-2",
+    id: "9Aqx9NHQVmQ",
     title: "Sufi Nights & Royal Heritage",
-    couple: "Kabir & Meera",
-    youtubeId: "9Aqx9NHQVmQ", // Replaceable with client's YouTube video ID
     category: "Cinematic Teaser",
     duration: "2:45",
     location: "Oberoi Sukhvilas, Chandigarh",
-    year: "2025",
-    description:
-      "High tempo dhol rhythms, Sufi poetry, and emotional Anand Karaj captured in true cinematic 4K glory.",
-    isFeatured: false,
   },
   {
-    id: "film-3",
+    id: "12AtxoeeXxg",
     title: "Colors of Love & Golden Hour Memories",
-    couple: "Rohan & Ananya",
-    youtubeId: "12AtxoeeXxg", // Replaceable with client's YouTube video ID
     category: "Wedding Film",
     duration: "3:52",
     location: "Jaipur, Rajasthan",
-    year: "2026",
-    description:
-      "A vibrant celebration of Rajasthani royalty, joyful dance sequences, and unscripted laughter with loved ones.",
-    isFeatured: false,
   },
 ];
 
+// For backward compatibility if needed
+export type WeddingFilm = YouTubeVideo;
+export const weddingFilms = videos;
+
 export const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@veddiaries9";
 export const INSTAGRAM_URL = "https://www.instagram.com/ved.diaries/";
-export const FACEBOOK_URL = "#"; // Replace with client's Facebook URL
+export const FACEBOOK_URL = "#";

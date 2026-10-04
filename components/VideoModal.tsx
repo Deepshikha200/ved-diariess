@@ -2,10 +2,10 @@
 
 import React, { useEffect } from "react";
 import { X, ExternalLink } from "lucide-react";
-import { WeddingFilm, YOUTUBE_CHANNEL_URL } from "@/data/films";
+import { YouTubeVideo, YOUTUBE_CHANNEL_URL } from "@/data/films";
 
 interface VideoModalProps {
-  film: WeddingFilm | null;
+  film: YouTubeVideo | null;
   onClose: () => void;
 }
 
@@ -30,6 +30,8 @@ export default function VideoModal({ film, onClose }: VideoModalProps) {
 
   if (!film) return null;
 
+  const cleanId = film.id.trim().split("&")[0].split("?")[0];
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-fade-in"
@@ -42,9 +44,11 @@ export default function VideoModal({ film, onClose }: VideoModalProps) {
         {/* Top Control Bar */}
         <div className="flex items-center justify-between px-5 sm:px-8 py-4 bg-[#102B24] border-b border-[#234E42]">
           <div className="flex flex-col">
-            <span className="text-xs font-serif italic text-[#C5A880]">
-              {film.category} • {film.location}
-            </span>
+            {(film.category || film.location) && (
+              <span className="text-xs font-serif italic text-[#C5A880]">
+                {[film.category, film.location].filter(Boolean).join(" • ")}
+              </span>
+            )}
             <h3 className="text-base sm:text-lg font-light text-white tracking-wide truncate max-w-md sm:max-w-xl">
               {film.title}
             </h3>
@@ -52,7 +56,7 @@ export default function VideoModal({ film, onClose }: VideoModalProps) {
 
           <div className="flex items-center gap-3">
             <a
-              href={`https://www.youtube.com/watch?v=${film.youtubeId}`}
+              href={`https://www.youtube.com/watch?v=${cleanId}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 text-xs text-[#FAF8F5]/80 hover:text-white px-3 py-1.5 rounded-full border border-white/20 transition-colors"
@@ -74,7 +78,7 @@ export default function VideoModal({ film, onClose }: VideoModalProps) {
         {/* 16:9 Responsive Video Embed Container */}
         <div className="relative aspect-video w-full bg-black">
           <iframe
-            src={`https://www.youtube.com/embed/${film.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
+            src={`https://www.youtube.com/embed/${cleanId}?autoplay=1&rel=0&modestbranding=1`}
             title={film.title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -83,8 +87,10 @@ export default function VideoModal({ film, onClose }: VideoModalProps) {
         </div>
 
         {/* Bottom Details Bar */}
-        <div className="p-5 sm:p-6 bg-[#0A1B17] flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-white/70">
-          <p className="max-w-2xl font-light">{film.description}</p>
+        <div className="p-4 sm:p-5 bg-[#0A1B17] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-white/70">
+          <div className="flex items-center gap-2">
+            <span className="text-white/50">Viewing on Ved Diaries</span>
+          </div>
           <a
             href={YOUTUBE_CHANNEL_URL}
             target="_blank"
