@@ -21,8 +21,8 @@ export const featuredStories: WeddingStory[] = [
     location: "Udaipur, Rajasthan",
     category: "Destination Wedding",
     coverImage: "/images/pre_wed.jpg",
-    secondaryImage: "/images/9E0A5571.jpg",
-    accentImage: "/images/1J2A0521.jpg",
+    secondaryImage: "/images/IMG_4596.JPG.jpeg",
+    accentImage: "/images/IMG_4594.JPG.jpeg",
     summary:
       "A grand three-day celebration infused with regal heritage, sunset vows overlooking palace waters, and boundless Punjabi energy under the desert starlight.",
     quote: "Ved Diaries captured not just how our wedding looked, but how deeply every second was felt.",
@@ -36,7 +36,7 @@ export const featuredStories: WeddingStory[] = [
     location: "The Oberoi Sukhvilas, Chandigarh",
     category: "Heritage Wedding",
     coverImage: "/images/wedding.jpg",
-    secondaryImage: "/images/9E0A8414.jpg",
+    secondaryImage: "/images/IMG_4627.JPG.jpeg",
     accentImage: "/images/DSC09951.jpg",
     summary:
       "Timeless architecture framed tender Anand Karaj rituals, followed by an intimate candlelit celebration echoing with acoustic melodies and heartfelt tears.",
@@ -66,7 +66,7 @@ export const featuredStories: WeddingStory[] = [
     location: "Mashobra, Shimla Hills",
     category: "Pre-Wedding & Intimate Wedding",
     coverImage: "/images/pre_wed2.jpg",
-    secondaryImage: "/images/1J2A0505.jpg",
+    secondaryImage: "/images/IMG_4619.JPG.jpeg",
     accentImage: "/images/DSC09765.jpg",
     summary:
       "Surrounded by deodar forests and crisp mountain breezes, Arjun and Tara shared quiet stolen glances before celebrating with their closest circle.",

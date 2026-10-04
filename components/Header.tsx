@@ -119,7 +119,7 @@ export default function Header() {
               aria-label="Open mobile menu"
               className={`p-2 rounded-lg transition-colors duration-200 ${
                 isScrolled
-                  ? "text-[#102B24] hover:bg-[#102B24]/5"
+                  ? "text-white hover:bg-[#102B24]/5"
                   : "text-white hover:bg-white/10"
               }`}
             >

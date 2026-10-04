@@ -16,9 +16,9 @@ export default function Films() {
   // Fallback high-res poster images for the video cards
   const videoPosters: Record<string, string> = {
     "film-1": "/images/contact_img.jpg",
-    "film-2": "/images/9E0A8414.jpg",
+    "film-2": "/images/IMG_4595.JPG.jpeg",
     "film-3": "/images/bannerimg.jpeg",
-    "film-4": "/images/1J2A0521.jpg",
+    "film-4": "/images/IMG_4594.JPG.jpeg",
   };
 
   return (

@@ -30,7 +30,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#102B24] text-[#FAF8F5] relative overflow-hidden border-t border-[#234E42]">
-      {/* Subtle Glows */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#C5A880]/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-20 pb-12 relative z-10">
@@ -39,9 +38,9 @@ export default function Footer() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#C5A880]/40 p-0.5 bg-[#0A1B17]">
+                <div className="relative w-15 h-15 rounded-full overflow-hidden p-0.5 ">
                   <Image
-                    src="/images/logo.png"
+                    src="/mainLogo.png"
                     alt="Ved Diaries Logo"
                     fill
                     className="object-cover"

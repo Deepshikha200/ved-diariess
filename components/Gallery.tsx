@@ -3,12 +3,20 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import { Maximize2, MapPin, Sparkles } from "lucide-react";
-import { galleryImages, galleryCategories, GalleryCategory, GalleryImage } from "@/data/gallery";
+import { galleryImages, galleryCategories, GalleryCategory } from "@/data/gallery";
 import Lightbox from "./Lightbox";
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<GalleryCategory>("All");
   const [activeLightboxIndex, setActiveLightboxIndex] = useState<number | null>(null);
+
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = { All: galleryImages.length };
+    galleryImages.forEach((img) => {
+      counts[img.category] = (counts[img.category] || 0) + 1;
+    });
+    return counts;
+  }, []);
 
   const filteredImages = useMemo(() => {
     if (selectedCategory === "All") return galleryImages;
@@ -30,7 +38,7 @@ export default function Gallery() {
           </h2>
           <div className="w-12 h-[1px] bg-[#C5A880] mt-4" />
           <p className="mt-3 text-neutral-600 max-w-xl text-xs sm:text-sm font-light">
-            A curated collection of quiet intimacies, majestic architectural frames, and exuberant rituals.
+            A curated archive of quiet intimacies, majestic architectural frames, and exuberant rituals.
           </p>
 
           {/* Category Filter Tabs */}
@@ -41,13 +49,16 @@ export default function Gallery() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 sm:px-5 py-2 rounded-full text-xs font-medium tracking-[0.15em] uppercase transition-all duration-300 ${
+                  className={`px-4 sm:px-5 py-2 rounded-full text-xs font-medium tracking-[0.15em] uppercase transition-all duration-300 flex items-center gap-1.5 ${
                     isActive
                       ? "bg-[#102B24] text-[#FAF8F5] shadow-md shadow-[#102B24]/20 scale-105"
                       : "bg-[#F5F2EB] text-[#102B24]/75 hover:bg-[#EBE6DC] hover:text-[#102B24]"
                   }`}
                 >
-                  {category}
+                  <span>{category}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${isActive ? "bg-white/20 text-[#E0CDB2]" : "bg-black/5 text-neutral-500"}`}>
+                    {categoryCounts[category] || 0}
+                  </span>
                 </button>
               );
             })}

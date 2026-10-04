@@ -24,9 +24,9 @@ export default function About() {
 
             {/* Overlapping Floating Emblem Card */}
             <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 w-44 sm:w-52 p-4 rounded-2xl bg-[#102B24] text-white shadow-2xl border border-[#C5A880]/30 hidden sm:flex items-center gap-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[#0A1B17] shrink-0 border border-[#C5A880]/40 p-1">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden  shrink-0 p-1">
                 <Image
-                  src="/images/logo.png"
+                  src="/mainLogo.png"
                   alt="Ved Diaries Emblem"
                   fill
                   className="object-contain"

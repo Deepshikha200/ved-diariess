@@ -6,9 +6,9 @@ import { ArrowDown, Play, ArrowUpRight, Sparkles } from "lucide-react";
 
 const heroSlides = [
   {
-    image: "/images/bannerimg.jpeg",
+    image: "/images/IMG_4594.JPG.jpeg",
     tagline: "Grand Celebrations",
-    location: "Chandigarh, India",
+    location: "Mohali, India",
   },
   {
     image: "/images/contact_img.jpg",
@@ -38,7 +38,6 @@ export default function Hero() {
       id="hero"
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1B17]"
     >
-      {/* Background Image Carousel with Cinematic Pan & Zoom */}
       {heroSlides.map((slide, index) => {
         const isActive = index === currentSlide;
         return (
@@ -63,16 +62,12 @@ export default function Hero() {
                 quality={90}
               />
             </div>
-            {/* Cinematic Gradient Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#102B24] via-black/40 to-black/60" />
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#102B24] via-black/20 to-black/30" />
           </div>
         );
       })}
 
-      {/* Main Hero Content */}
       <div className="relative z-20 max-w-5xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center pt-24 sm:pt-28 pb-16">
-        {/* Subtle Brand Eyebrow */}
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A880]/30 text-[#E0CDB2] mb-6 sm:mb-8 animate-fade-in">
           <Sparkles className="w-3.5 h-3.5 text-[#C5A880]" />
           <span className="text-[10px] sm:text-xs font-medium tracking-[0.3em] uppercase">
@@ -80,19 +75,16 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Brand Headline */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white tracking-tight leading-[1.08] sm:leading-[1.05] max-w-4xl">
           Stories that deserve <br className="hidden sm:inline" />
           to be <span className="font-serif italic font-normal text-[#E0CDB2]">remembered.</span>
         </h1>
 
-        {/* Narrative Subtext */}
         <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-white/80 font-light max-w-2xl leading-relaxed tracking-wide">
           We don&apos;t just capture how your wedding looks. We preserve the quiet glances,
           regal rituals, and raw emotions that make it unforgettable.
         </p>
 
-        {/* Dual Call-to-Actions */}
         <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center gap-4 sm:gap-5 w-full sm:w-auto">
           <a
             href="#stories"
@@ -112,15 +104,12 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Hero Bottom Bar: Slide Indicators & Scroll Prompt */}
       <div className="absolute bottom-6 sm:bottom-10 left-0 right-0 z-20 px-6 sm:px-12 flex items-center justify-between text-white/70 max-w-7xl mx-auto">
-        {/* Slide Location Indicator */}
         <div className="hidden sm:flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-white/60">
           <span className="w-2 h-2 rounded-full bg-[#C5A880] animate-pulse" />
           <span>{heroSlides[currentSlide].location}</span>
         </div>
 
-        {/* Carousel Dots */}
         <div className="flex items-center gap-2.5 mx-auto sm:mx-0">
           {heroSlides.map((_, idx) => (
             <button
@@ -136,7 +125,6 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Scroll Indicator */}
         <a
           href="#brand-intro"
           className="hidden sm:flex items-center gap-2 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors"
