@@ -40,7 +40,7 @@ export default function WhyVedDiaries() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
+    <section className="py-20 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16 sm:mb-20">

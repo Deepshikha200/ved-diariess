@@ -10,7 +10,7 @@ export default function Films() {
   const [activeVideo, setActiveVideo] = useState<YouTubeVideo | null>(null);
 
   return (
-    <section id="films" className="py-24 sm:py-32 bg-[#0A1B17] text-white relative overflow-hidden">
+    <section id="films" className="py-20 sm:py-32 bg-[#0A1B17] text-white relative overflow-hidden">
       {/* Subtle Background Glows */}
       <div className="absolute top-1/4 -left-48 w-96 h-96 bg-[#102B24] rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#C5A880]/10 rounded-full blur-[140px] pointer-events-none" />

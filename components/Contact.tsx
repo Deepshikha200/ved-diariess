@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Studio Information & Social Links */}
@@ -132,7 +132,7 @@ export default function Contact() {
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#102B24] block mb-4">
                 Follow Ved Diaries
               </span>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap">
                 <a
                   href={INSTAGRAM_URL}
                   target="_blank"

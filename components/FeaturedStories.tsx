@@ -9,7 +9,7 @@ export default function FeaturedStories() {
   const [selectedStory, setSelectedStory] = useState<WeddingStory | null>(null);
 
   return (
-    <section id="stories" className="py-24 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
+    <section id="stories" className="py-20 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 gap-6">

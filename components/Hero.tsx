@@ -11,7 +11,7 @@ const heroSlides = [
     location: "Mohali, India",
   },
   {
-    image: "/images/contact_img.jpg",
+    image: "/images/IMG_4631.JPG.jpeg",
     tagline: "Timeless Emotion",
     location: "Chandigarh, India",
   },

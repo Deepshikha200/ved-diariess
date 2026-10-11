@@ -137,7 +137,7 @@ export default function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProp
             </div>
           </div>
 
-          <div className="flex items-center justify-between pt-2">
+          <div className="flex items-center justify-between pt-2 flex-wrap">
             <span className="text-[11px] tracking-widest uppercase text-white/50">Follow Our Craft</span>
             <div className="flex items-center gap-4 text-white/80">
               <a

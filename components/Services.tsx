@@ -7,7 +7,7 @@ import { servicesData } from "@/data/services";
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 sm:py-32 bg-[#F5F2EB] relative overflow-hidden">
+    <section id="services" className="py-20 sm:py-32 bg-[#F5F2EB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16 sm:mb-24">

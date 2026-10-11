@@ -30,7 +30,7 @@ export default function BrandIntro() {
   return (
     <section
       id="brand-intro"
-      className="py-24 sm:py-32 lg:py-40 bg-[#FAF8F5] relative overflow-hidden"
+      className="py-20 sm:py-32 lg:py-40 bg-[#FAF8F5] relative overflow-hidden"
     >
       {/* Subtle Background Ambience */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#102B24]/[0.03] rounded-full blur-3xl pointer-events-none" />

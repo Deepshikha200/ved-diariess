@@ -25,7 +25,7 @@ export default function CtaBanner() {
       <div className="absolute inset-6 sm:inset-10 lg:inset-14 border border-[#C5A880]/20 rounded-3xl pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A880]/40 text-[#E0CDB2] mb-6">
           <Sparkles className="w-3.5 h-3.5 text-[#C5A880]" />
           <span className="text-[10px] sm:text-xs font-medium tracking-[0.3em] uppercase">

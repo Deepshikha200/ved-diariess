@@ -24,7 +24,7 @@ export default function Gallery() {
   }, [selectedCategory]);
 
   return (
-    <section id="gallery" className="py-24 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
+    <section id="gallery" className="py-20 sm:py-32 bg-[#FAF8F5] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
@@ -42,7 +42,7 @@ export default function Gallery() {
           </p>
 
           {/* Category Filter Tabs */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          {/* <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {galleryCategories.map((category) => {
               const isActive = selectedCategory === category;
               return (
@@ -62,13 +62,11 @@ export default function Gallery() {
                 </button>
               );
             })}
-          </div>
+          </div> */}
         </div>
 
-        {/* Editorial Masonry Grid (columns layout allows mixed portrait, landscape, square naturally) */}
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 [column-fill:_balance]">
           {filteredImages.map((image, index) => {
-            // Determine aspect ratio class
             const aspectClass =
               image.aspect === "portrait"
                 ? "aspect-[3/4]"
