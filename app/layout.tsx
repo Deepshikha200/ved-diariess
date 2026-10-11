@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
+import ToastProvider from "@/components/ToastProvider";
 import "./globals.css";
 
 const jost = Jost({
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${jost.variable} scroll-smooth antialiased`}>
       <body className="min-h-screen flex flex-col font-sans bg-[#FAF8F5] text-[#171717] selection:bg-[#102B24] selection:text-[#FAF8F5] overflow-x-hidden">
+        <ToastProvider />
         {children}
       </body>
     </html>

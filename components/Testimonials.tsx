@@ -19,7 +19,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 sm:py-32 bg-[#F5F2EB] relative overflow-hidden">
+    <section className="py-20 sm:py-32 bg-[#F5F2EB] relative overflow-hidden" id="stories">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
