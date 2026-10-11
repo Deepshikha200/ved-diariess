@@ -7,6 +7,8 @@ import { ArrowDown, Play, ArrowUpRight, Sparkles } from "lucide-react";
 const heroSlides = [
   {
     image: "/images/IMG_4594.JPG.jpeg",
+    // image: "/images/IMG_4648.JPG.jpeg",
+
     tagline: "Grand Celebrations",
     location: "Mohali, India",
   },
@@ -16,7 +18,7 @@ const heroSlides = [
     location: "Chandigarh, India",
   },
   {
-    image: "/images/DSC09536.jpg",
+    image: "/images/IMG_4648.JPG.jpeg",
     tagline: "Regal Heritage",
     location: "Chandigarh, India",
   },
@@ -29,7 +31,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
@@ -42,7 +44,7 @@ export default function Hero() {
         const isActive = index === currentSlide;
         return (
           <div
-            key={slide.image}
+            key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               isActive ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}

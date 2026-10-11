@@ -61,13 +61,13 @@ export const servicesData: ServiceItem[] = [
   },
 
   {
-    id: "pre-wedding",
+    id: "Wedding",
     number: "04",
-    title: "Pre-Wedding Stories",
+    title: "Wedding Stories",
     tagline: "Stories, scenic destinations, and unforced chemistry.",
     description:
       "Before the whirlwind of celebrations begins, take time to celebrate your love story. Whether amidst heritage havelis, misty pine forests, or quiet lakefronts, we curate intimate concepts that reflect your genuine bond.",
-    image: "/images/pre_wed.jpg",
+    image: "/images/IMG_4643.JPG.jpeg",
     deliverables: [
       "Curated styling & location conceptualization",
       "50+ Artistically edited signature couple portraits",
