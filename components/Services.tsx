@@ -49,10 +49,6 @@ export default function Services() {
                     {/* Subtle Overlay Gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#102B24]/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
 
-                    {/* Badge */}
-                    <div className="absolute top-5 left-5 px-3.5 py-1.5 rounded-full bg-[#102B24]/80 backdrop-blur-md border border-[#C5A880]/30 text-white text-[11px] tracking-[0.2em] uppercase font-light">
-                      Service {service.number}
-                    </div>
                   </div>
 
                   {/* Decorative Subtle Frame */}
