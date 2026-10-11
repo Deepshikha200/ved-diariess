@@ -37,4 +37,4 @@ export const weddingFilms = videos;
 
 export const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@veddiaries9";
 export const INSTAGRAM_URL = "https://www.instagram.com/ved.diaries/";
-export const FACEBOOK_URL = "#";
+export const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61592421539214";
