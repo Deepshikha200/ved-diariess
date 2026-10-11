@@ -48,7 +48,7 @@ export default function Home() {
         <Testimonials />
 
         {/* 10. Powerful Full-Width Cinematic CTA */}
-        <CtaBanner />
+        {/* <CtaBanner /> */}
 
         {/* 11. Contact & Date Reservation */}
         <Contact />
